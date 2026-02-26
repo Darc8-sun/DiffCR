@@ -1,0 +1,15 @@
+compress_base:
+  pre_train: False
+  model_path: ""
+  channel_c: [8,8,8,8,16,16,32,32,64,64]
+  M: 256
+  N: 256
+  K: 8
+  cb_size: 32
+  num_slice: 10
+  metric: 'mse'
+  sample_mode: False
+  model_type: compressor_v3
+
+
+
