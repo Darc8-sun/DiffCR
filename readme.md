@@ -4,7 +4,7 @@
 >
 The overall pipeline of DiffCR
 <p align="center">
-    <img src="./asset/pipeline.png" style="border-radius: 0px"><br>
+    <img src="./asset/pipeline.jpg" style="border-radius: 0px"><br>
 </p>
 
 ## <a name="cite"></a>:microscope: Performance
@@ -65,4 +65,5 @@ Please cite us if our work is useful for your research.
   year={2026}
 }
 ```
+
 
