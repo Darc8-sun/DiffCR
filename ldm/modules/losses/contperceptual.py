@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import wandb
 import os
-os.environ["WANDB_API_KEY"] = "ac7d3ae351fe1e6f8b9f4609cf11e2e25bf484ac"
+
 
 from taming.modules.losses.vqperceptual import *  # TODO: taming dependency yes/no?
 from lpips import LPIPS as LP
