@@ -1,13 +1,13 @@
 # Towards Efficient Low-rate Image Compression with Frequency-aware Diffusion Prior Refinement 
-> Yichong Xia , Yimin Zhou, Jinpeng Wang, Bin Chen<br>
+> Yichong Xia, Yimin Zhou, Jinpeng Wang, Bin Chen<br>
 > :sunglasses: This work is accepted by AAAI-26
 >
 The overall pipeline of DiffCR
 <p align="center">
-    <img src="./asset/git_pic.pdf" style="border-radius: 0px"><br>
+    <img src="./asset/pipeline.png" style="border-radius: 0px"><br>
 </p>
 
-## <a name="cite"></a>::microscope:: Performance
+## <a name="cite"></a>:microscope: Performance
 ### Quantitative Performance on Kodak </summary>
 <p align="center">
     <img src="asset/kodak_rd.png" style="border-radius: 0px"><br>
@@ -43,7 +43,7 @@ The overall pipeline of DiffCR
     </table>
 </div>
 
-## <a name="cite"></a>::scroll:: Preparation
+## <a name="cite"></a>:wrench: Preparation
 
 1. Download pretrained [Stable Diffusion v2.1](https://huggingface.co/stabilityai/stable-diffusion-2-1-base) into `./ckpt/SD21`.
    ```
@@ -53,7 +53,7 @@ The overall pipeline of DiffCR
 
 3. Download pretrained DiffCR into `./ckpt/CR_model`.
 
-## <a name="cite"></a>::scroll:: Citation
+## <a name="cite"></a>:scroll: Citation
 
 
 Please cite us if our work is useful for your research.
@@ -65,3 +65,4 @@ Please cite us if our work is useful for your research.
   year={2026}
 }
 ```
+
