@@ -2,7 +2,7 @@
 > Yichong Xia, Yimin Zhou, Jinpeng Wang, Bin Chen<br>
 > :sunglasses: This work is accepted by AAAI-26
 >
-The overall pipeline of DiffCR
+## <a name="cite"></a>:cat: The overall pipeline of DiffCR
 <p align="center">
     <img src="./asset/pipeline.jpg" style="border-radius: 0px"><br>
 </p>
@@ -51,7 +51,28 @@ The overall pipeline of DiffCR
    ```
 2. Download pretrained CLIP model (https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K) into `./ckpt/SD21`.
 
+
 3. Download pretrained DiffCR into `./ckpt/CR_model`.
+https://pan.quark.cn/s/bd196bad2f3a?pwd=Fq9f CODE=Fq9f
+```
+cr_highbits_6.ckpt : ~0.06 bpp kodak
+cr_medhighbits_8.ckpt : ~0.04 bpp kodak
+cr_medbits_12.ckpt : ~0.03 bpp kodak
+cr_lowbits_18.ckpt : ~0.02 bpp kodak
+   ```
+## <a name="cite"></a>:computer: Inference
+You can invoke the inference.py file to use the inference function. The inference results will generate decoded images and theoretical bpp values. The encoding and decoding code will be released soon.
+
+```
+python3 Inference.py \
+--model_dir ./ckpt/CR_model/cr_model.ckpt \
+--base_diffusion_ckpt ./ckpt/SD21/v2-1_512-ema-pruned.ckpt  \
+--config_dir ./Configs/evalX.yaml \
+--img_path ./test_pic/anime.png \
+--prompt 'A close-up of an anime girl with wide eyes, blushing cheeks, and an open mouth, expressing intense shock or excitement.'\
+--output_dir ./ \
+--device cuda
+   ```
 
 ## <a name="cite"></a>:scroll: Citation
 
@@ -65,5 +86,6 @@ Please cite us if our work is useful for your research.
   year={2026}
 }
 ```
+
 
 
